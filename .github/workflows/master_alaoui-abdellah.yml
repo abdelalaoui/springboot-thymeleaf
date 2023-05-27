@@ -52,8 +52,8 @@ jobs:
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_6B6D757039E1455AAD06382BDF0E8C98 }}
           package: '*.war'
       - name: Upload a Build Artifact
-  uses: actions/upload-artifact@v3.1.2
-  with:
+uses: actions/upload-artifact@v3.1.2
+    with:
     # Artifact name
     name: # optional, default is artifact
     # A file, directory or wildcard pattern that describes what to upload
@@ -66,7 +66,8 @@ Available Options:
 
   if-no-files-found: # optional, default is warn
     # Duration after which artifact will expire in days. 0 means using default retention.
-Minimum 1 day. Maximum 90 days unless changed from the repository settings page.
+
+
 
     retention-days: # optional    
           
